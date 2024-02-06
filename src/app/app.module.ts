@@ -10,17 +10,23 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
 
+// Importação do nosso arquivo routing para as rotas
+import { routing } from './app.routing';
+import { SobreComponent } from './sobre/sobre.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    CursosComponent
+    CursosComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    routing
   ],
   bootstrap: [AppComponent]
 })
